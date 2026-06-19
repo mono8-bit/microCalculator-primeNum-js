@@ -16,15 +16,12 @@ function calc(a,b, operator){
             return 'ты что-то не то ввёл'
     }
 }
-console.log(calc(2, 3, '+'))
-console.log(calc(2, 3, '-'))
-console.log(calc(2, 3, '*'))
-console.log(calc(2, 0, '/'))
+
 
 const button = document.querySelector('.calc');
 button.addEventListener('click', () => {
-    const a = prompt('Первое число');
-    const b = prompt('Второе число');
+    const a = +prompt('Первое число');
+    const b = +prompt('Второе число');
     const operator = prompt('Оператор (+, -, *, /)');
     const result = calc(a, b, operator);
     console.log(result);

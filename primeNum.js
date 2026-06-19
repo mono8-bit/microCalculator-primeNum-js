@@ -12,11 +12,11 @@ function isPrime(num){
     }
     return true
 }
-console.log(isPrime(11))
+console.log(isPrime(2))
 
 
 const btn = document.querySelector('.primeNum')
 btn.addEventListener('click', ()=>{
-    const num = prompt()
+    const num = +prompt()
     console.log(isPrime(num))
 })
